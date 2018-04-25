@@ -1,14 +1,11 @@
-//
-//  PaymentCardsButtonCell.swift
-//  NMB
-//
-//  Created by Martin Rechsteiner on 21/02/2018.
-//  Copyright © 2018 DNB. All rights reserved.
-//
+
+//  CollectionViewCardsButtonCell.swift
+//  Created by Abhishek kureriya on 20/04/2018.
+
 
 import UIKit
 
-class PaymentCardsButtonCell: UICollectionViewCell {
+class CollectionViewCardsButtonCell: UICollectionViewCell {
     
     private let titleLabel: UILabel
     private let lineLayer: CAShapeLayer
@@ -35,7 +32,7 @@ class PaymentCardsButtonCell: UICollectionViewCell {
         contentView.layer.shadowRadius = 12
         contentView.layer.shadowOffset = CGSize(width: 0, height: 8)
         contentView.layer.shadowOpacity = 1
-        contentView.backgroundColor = UIColor(red: 0, green: 132/255, blue: 132/255, alpha: 1)
+        contentView.backgroundColor = UIColor().appDefaultThemeColor()
         contentView.addSubview(titleLabel)
         contentView.layer.addSublayer(lineLayer)
         

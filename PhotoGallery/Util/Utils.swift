@@ -1,6 +1,6 @@
 //
 //  Utils.swift
-//  sixt
+
 //
 //  Created by Abhishek on 20/12/2017.
 //  Copyright © 2017 Abhishek. All rights reserved.

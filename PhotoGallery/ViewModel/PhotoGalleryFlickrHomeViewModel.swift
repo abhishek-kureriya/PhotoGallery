@@ -8,14 +8,50 @@
 
 import UIKit
 
-class PhotoGalleryFlickrHomeViewModel: UIView {
-
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
+class PhotoGalleryFlickrHomeViewModel: photoGalleryServiceDelegate {
+    
+    weak var deleget: photoGalleryViewModelDelegate?
+    var api = PhotoGalleryServiceLayer()
+    private var photoListArray:[FlickerSearchResponseDataModel]?
+    var userSelectionList:[UserProfileDataModel]?
+   
+    
+    func callFlickrApi(searchString:String){
+        
+        api.deleget = self
+        api.getImagefromApi(searchString:searchString)
+        
+        
     }
-    */
+    func didRetrieveImageData(data : [FlickerSearchResponseDataModel]) {
+        photoListArray = data
+        DispatchQueue.main.async {
+            self.deleget?.updateView(responseObj: self.photoListArray!)
+        }
+    }
+    
+    func errorOnRetrieveingImageData(errorMessage: String) {
+        
+    }
+    
+    
+    func addImageToUserFavList(itemIndex:Int){
+      
+        sharedDataManager.photoUrl.append(photoListArray![itemIndex].photoUrl)
+        sharedDataManager.title.append (photoListArray![itemIndex].title)
 
+   }
 }
+    
+
+
+
+   
+    
+
+  
+        
+        
+    
+    
+

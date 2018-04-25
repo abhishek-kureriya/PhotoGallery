@@ -1,9 +1,9 @@
 //
 //  BaseRoundedCardCell.swift
-//  AppStoreClone
+//  
 //
-//  Created by Phillip Farrugia on 6/17/17.
-//  Copyright © 2017 Phill Farrugia. All rights reserved.
+// Created by Abhishek on 16/04/2018.
+//  Copyright © 2018 Abhishek. All rights reserved.
 //
 
 import UIKit

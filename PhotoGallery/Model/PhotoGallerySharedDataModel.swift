@@ -7,3 +7,18 @@
 //
 
 import Foundation
+
+var sharedDataManager = PhotoGallerySharedDataModel(photoUrl: "",title:"")
+
+class PhotoGallerySharedDataModel {
+    var  photoUrl: [String] = []
+    var   title: [String] = []
+   
+    init(photoUrl: String,title: String) {
+        self.photoUrl = [photoUrl]
+        self.title =  [title]
+    }
+}
+
+
+

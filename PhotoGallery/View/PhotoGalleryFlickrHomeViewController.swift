@@ -44,7 +44,7 @@ class PhotoGalleryFlickrHomeViewController: UIViewController,photoGalleryViewMod
         searchController.searchBar.tintColor = UIColor.white
         searchController.searchBar.delegate = self
         UIBarButtonItem.appearance(whenContainedInInstancesOf: [UISearchBar.self]).title = "Dismiss"
-        UITextField.appearance(whenContainedInInstancesOf: [UISearchBar.self]).attributedPlaceholder = NSAttributedString(string: "Search your destination here..", attributes: [NSAttributedStringKey.foregroundColor: UIColor.orange])
+        UITextField.appearance(whenContainedInInstancesOf: [UISearchBar.self]).attributedPlaceholder = NSAttributedString(string: "Type your search string", attributes: [NSAttributedStringKey.foregroundColor: UIColor.orange])
         
         if let textfield = searchController.searchBar.value(forKey: "searchField") as? UITextField {
             if let backgroundview = textfield.subviews.first {
@@ -55,10 +55,10 @@ class PhotoGalleryFlickrHomeViewController: UIViewController,photoGalleryViewMod
         }
         
     }
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        
+    override func viewDidDisappear(_ animated: Bool) {
+        self.tabBarController?.navigationItem.searchController = nil
     }
+    
     
     func updateView(responseObj: [FlickerSearchResponseDataModel]) {
         collectionViewDataset = responseObj
