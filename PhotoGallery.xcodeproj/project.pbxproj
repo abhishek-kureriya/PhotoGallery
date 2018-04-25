@@ -268,7 +268,7 @@
 		C955803A2053F57500565D22 /* Util */ = {
 			isa = PBXGroup;
 			children = (
-				C9DFC439208B4753002D794B /* Payment Cards */,
+				C9DFC439208B4753002D794B /* CardView */,
 				C9B012692056A49900A6AEFC /* Utils.swift */,
 			);
 			path = Util;
@@ -321,14 +321,14 @@
 			path = CustomViews;
 			sourceTree = "<group>";
 		};
-		C9DFC439208B4753002D794B /* Payment Cards */ = {
+		C9DFC439208B4753002D794B /* CardView */ = {
 			isa = PBXGroup;
 			children = (
 				C9DFC43A208B4753002D794B /* Custom Cells */,
 				C9DFC43E208B4753002D794B /* CollectionViewCardsController.swift */,
 				C9DFC43F208B4753002D794B /* CollectionViewCardsLayout.swift */,
 			);
-			path = "Payment Cards";
+			path = CardView;
 			sourceTree = "<group>";
 		};
 		C9DFC43A208B4753002D794B /* Custom Cells */ = {
