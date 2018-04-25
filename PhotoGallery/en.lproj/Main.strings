@@ -1,0 +1,15 @@
+
+/* Class = "UITabBarItem"; title = "Home"; ObjectID = "EgM-tX-hny"; */
+"EgM-tX-hny.title" = "Home";
+
+/* Class = "UITabBarItem"; title = "Profile"; ObjectID = "PQy-Aq-g3r"; */
+"PQy-Aq-g3r.title" = "Profile";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "SlX-fr-sS3"; */
+"SlX-fr-sS3.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "U0R-l0-5wd"; */
+"U0R-l0-5wd.text" = "Label";
+
+/* Class = "UILabel"; text = "Caption"; ObjectID = "sJ1-Gq-MmG"; */
+"sJ1-Gq-MmG.text" = "Caption";
